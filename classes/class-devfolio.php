@@ -1,7 +1,7 @@
 <?php
 namespace wpdev;
 
-class WPDev
+class Devfolio
 {
     public function __construct()
     {
@@ -13,12 +13,12 @@ class WPDev
      **************************************************************************
      *************************************************************************/
 
-    public function addMenu($menu_name)
+    public function add_menu($menu_name)
     {
         MenuLocationConfig::add_menu_location($menu_name);
     }
 
-    public function removeMenu($menu_name)
+    public function remove_menu($menu_name)
     {
         MenuLocationConfig::remove_menu_location($menu_name);
     }
@@ -29,7 +29,7 @@ class WPDev
      **************************************************************************
      *************************************************************************/
 
-    public function requirePlugin($plugin_name, $class_name = '')
+    public function require_plugin($plugin_name, $class_name = '')
     {
         RequiredPluginConfig::require_plugin($plugin_name, $class_name);
     }
@@ -40,12 +40,12 @@ class WPDev
      **************************************************************************
      *************************************************************************/
 
-    public function addPostType($post_type, $config)
+    public function add_post_type($post_type, $config)
     {
         CustomPostTypeConfig::add_post_type($post_type, $config);
     }
 
-    public function removePostType($post_type)
+    public function remove_post_type($post_type)
     {
         CustomPostTypeConfig::remove_post_type($post_type);
     }
@@ -56,12 +56,12 @@ class WPDev
      **************************************************************************
      *************************************************************************/
 
-    public function addSidebar($sidebar_name, $description = '')
+    public function add_sidebar($sidebar_name, $description = '')
     {
         SidebarLocationConfig::add_sidebar_location($sidebar_name, $description);
     }
 
-    public function removeSidebar($sidebar_name)
+    public function remove_sidebar($sidebar_name)
     {
         SidebarLocationConfig::remove_sidebar_location($sidebar_name);
     }
@@ -72,12 +72,12 @@ class WPDev
      **************************************************************************
      *************************************************************************/
 
-    public function addSupport($feature)
+    public function add_support($feature)
     {
         ThemeSupportConfig::add_theme_support($feature);
     }
 
-    public function removeSupport($feature)
+    public function remove_support($feature)
     {
         ThemeSupportConfig::remove_theme_support($feature);
     }
