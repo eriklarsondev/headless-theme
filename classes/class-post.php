@@ -81,6 +81,10 @@ class CustomPostTypeConfig extends Base
         if (!$features) {
             return ['title', 'editor'];
         }
+
+        foreach ($features as $key => $value) {
+            $features[$key] = parent::formatLabel($value, '-', false);
+        }
         return $features;
     }
 
