@@ -1,5 +1,5 @@
 /*
-Theme Name: Headless Theme
+Theme Name: Devfolio
 Theme URI: #
 Version: 0.1.0
 Requires PHP: 7.0
@@ -7,9 +7,9 @@ Requires at least: 5.0
 Tested up to: 6.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: headless-theme
-Description: A scalable headless WordPress theme optimized for custom post types and dynamic web content
+Text Domain: devfolio
+Description: A lightweight and scalable WordPress theme designed to be used as a headless CMS
 Author: Erik Larson
 Author URI: #
-Tags: WordPress Theme, Headless Architecture, WordPress REST API, Custom Post Types, Advanced Custom Fields, Tailwind CSS
+Tags: wordpress theme, headless architecture, rest api, custom post types, advanced custom fields, tailwind
 */

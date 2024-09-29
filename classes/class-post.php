@@ -37,6 +37,15 @@ class CustomPostTypeConfig extends Base
             'public' => true,
             'publicly_queryable' => false,
             'query_var' => $id,
+            'rest_base' => isset($config->collection)
+                ? parent::formatLabel($config->collection, '-', false)
+                : parent::formatLabel($post_type . 's', '-', false),
+            'rest_namespace' => 'collections',
+            'rewrite' => [
+                'slug' => isset($config->collection)
+                    ? '/collections/' . parent::formatLabel($config->collection, '-', false)
+                    : '/collections/' . parent::formatLabel($post_type . 's', '-', false)
+            ],
             'show_in_admin_bar' => false,
             'show_in_menu' => true,
             'show_in_nav_menus' => false,

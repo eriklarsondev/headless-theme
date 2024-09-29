@@ -1,3 +1,3 @@
-# Headless Theme
+# Devfolio
 
-A scalable headless WordPress theme optimized for custom post types and dynamic web content
+A lightweight and scalable WordPress theme designed to be used as a headless CMS
