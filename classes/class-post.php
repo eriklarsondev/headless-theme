@@ -31,7 +31,7 @@ class CustomPostTypeConfig extends Base
                 isset($config->collection) ? $config->collection : null
             ),
             'menu_icon' => isset($config->icon)
-                ? parent::formatLabel($config->icon, '-', false)
+                ? 'dashicons-' . parent::formatLabel($config->icon, '-', false)
                 : 'dashicons-admin-plugins',
             'menu_position' => isset($config->order) ? (int) $config->order : null,
             'public' => true,
