@@ -1,0 +1,9 @@
+.DS_Store
+.env
+
+mix-manifest.json
+
+node_modules
+package-lock.json
+
+dist
