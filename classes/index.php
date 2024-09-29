@@ -3,6 +3,7 @@ namespace wpdev;
 
 include_once __DIR__ . '/class-admin.php';
 include_once __DIR__ . '/class-base.php';
+include_once __DIR__ . '/class-comments.php';
 include_once __DIR__ . '/class-editor.php';
 include_once __DIR__ . '/class-enqueue.php';
 include_once __DIR__ . '/class-excerpt.php';
